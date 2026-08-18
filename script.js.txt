@@ -1,0 +1,112 @@
+/*let klop = document.querySelector('.button_2')
+let klops = document.querySelector('header')
+klop.addEventListener('click', yoop)
+console.log(klop)
+let condition = false
+
+let inputs = document.querySelector('.tops')
+/*tops.addEventListener('click', yoooop)
+
+let condition_2 = false
+
+function yoop(){
+   if(condition == false){
+    klops.style.backgroundColor = 'blueviolet'
+    condition = true
+   }
+   /*Как добавить третий цвет?
+   else{
+    klops.style.backgroundColor = 'rgb(86, 19, 201)'
+    condition = false
+   }
+}
+
+function yoooop(){
+    if(condition == false){
+        tops.text.show()
+        condition_2 = true
+       }
+       else{
+        tops.text.hide()
+        condition_2 = false
+       }
+
+}
+inputs.addEventListener('submit', yoooop)
+
+
+const burger = document.querySelector('.burger')
+
+burger.addEventListener('click', hello)
+
+function hello(){
+    burger.classList.toggle('active')
+    
+}*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+let header = document.querySelector('header')
+let contetnt = document.querySelector('.content')
+let input = document.querySelector('input')
+let button = document.querySelector('.button_1')
+let condition = false
+/*-------------------------------------*/
+button.addEventListener('click', button_click)
+header.addEventListener('click', yoop)
+/*-------------------------------------*/
+function yoop(){
+    if(condition == false){
+        header.style.backgroundColor = 'blueviolet'
+        condition = true
+       }
+       /*Как добавить третий цвет?*/
+       else{
+        header.style.backgroundColor = 'brown'
+        condition = false
+       }
+}
+/*_____________________*/
+function button_click(){
+    contetnt.textContent += " " + input.value
+}
+
+
+
+// const logo = document.querySelector(".logo");
+// logo.addEventListener("click", doobleclick)
+
+// function doobleclick(){
+//     logo.classList.toggle("changeSize")
+// }
+
+
+
+
+const burgers = document.querySelector(".burger");
+const menu = document.querySelector(".ul")
+
+const topBtn = document.getElementById("topBtn")
+
+burgers.addEventListener("click", burgers_click);
+
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        topBtn.classList.add('show');
+    } else {
+        topBtn.classList.remove('show');
+    }
+} )
+
+topBtn.addEventListener('click', att)
+
+function att() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+function burgers_click(){
+    burgers.classList.toggle("active")
+    menu.classList.toggle("show")
+};

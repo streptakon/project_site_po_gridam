@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class = "nav">
+            <ul class = "ul">
+                <li class = "items_li"><a href=""> info </a></li>
+                <li class = "items_li"><a href="">2</a></li>
+                <li class = "items_li"><a href="">3</a></li>
+                <li class = "items_li"><a href="">4</a></li>
+                <li class = "items_li"><a href="">5</a></li>
+                <li class = "items_li"><a href=""></a></li>
+                <li class = "items_li"><a href="contacts.html"> contacts </a></li> 
+            </ul>
+        </nav>
+        <input>
+        <button class = "button_1"> _'\(0_0)/'_ </button>
+    </header>
+    <main>
+        <article class = "article_form">
+            <form>
+                <label for = "name">
+                    Ф.И.О
+                </label>
+                <input id = "name" placeholder="Введите ваше имя">
+
+                <label for = "email">
+                    Email
+                </label>
+                <input id = "email" placeholder="Введите свою почту" type = "email">
+
+                <label for = "number">
+                    Номер телефона
+                </label>
+                <input id = "number" placeholder="Введите Ваш номер телефона" type = "number">
+
+                <button class = "button_otpavit">
+                    Отправить
+                </button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p class="content">Привет</p>
+    </footer>
+</body>
+</html>

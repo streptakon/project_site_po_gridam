@@ -1,0 +1,213 @@
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+/*Section 0*/
+
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+
+/*Section 1*/
+
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+body{
+    display: grid;
+    background-color:rgb(163, 82, 0);
+    min-height: 80%;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+header{
+    display: flex;
+    grid-area: header;
+    background-color:brown;
+    max-height: 14vh;
+    align-items: center;
+    justify-content: space-around;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+main{
+    display: grid;
+    grid-area: main;
+    background-color:dimgrey;
+    min-height: 74vh;
+    grid-template-areas:
+    "roof"
+    "roof"
+    "widget_panel"
+    "widget_panel"
+    "widget_panel";
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+footer{
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(83, 69, 93);
+    min-height: 12vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    max-width: 250px;
+    border: solid 3px black;
+    border-radius: 20%;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+/*Section 1*/
+
+.nav{
+    width: 80%;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+
+.roof{
+    display: grid;
+    grid-area: roof;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+.widget_panel{
+    display: grid;
+    grid-area: widget_panel;
+    background-color: rgb(211,84,0);
+    height: 100%;
+    grid-template-areas: 
+    "left_panel center_panel right_panel";
+    grid-auto-flow: column;
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+/*Section 2*/
+
+.left_panel{  
+    grid-area: left_panel;
+    background-color:rgb(90, 115, 140);
+    
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+.center_panel{
+    grid-area: center_panel;
+    background-color:rgb(86, 112, 140);
+    
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+.right_panel{
+    grid-area: right_panel;
+    background-color:rgb(65, 88, 110);
+    
+}
+/*__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-*/
+.article_form{
+    display: flex;
+    margin: 20%;
+    margin-top: 2%;
+    justify-content: center;
+}
+.article_form input,button{
+    width: 230px;
+    border-radius: 20px;
+}
+.article_form button{
+    margin-top: 20px; 
+}
+
+.logo.changeSize{
+    width: 50px;
+    height: 50px;
+}
+
+.burger{
+    display: none;
+    width: 30px;
+    height: 22px;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-around;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.burger span{
+    background-color: aliceblue;
+    height: 2px;
+}
+
+.burger.active span:nth-child(1){
+    transform: rotate(45deg) translateY(8px);
+}
+
+.burger.active span:nth-child(2){
+    display: none;
+}
+
+.burger.active span:nth-child(3){
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: none; /* Скрыта по умолчанию */
+}
+
+#topBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+#topBtn.show {
+    display: block; /* Показываем при прокрутке */
+}
+
+@media(max-width: 548px){
+    .burger{
+        display: flex;
+    }
+    .ul{
+        display: none;
+    }
+    .ul.show{
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2%;
+    }
+    .button_1{
+        max-width: 50px;
+    }
+}

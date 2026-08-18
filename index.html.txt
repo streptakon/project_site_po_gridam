@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class = "nav">
+            <ul class = "ul">
+                <li class = "items_li"><a href=""> info </a></li>
+                <li class = "items_li"><a href="">2aaaaaaaaaaaaaaaa</a></li>
+                <li class = "items_li"><a href="">3wwwwwwwwwwwww</a></li>
+                <li class = "items_li"><a href="">4eeeeeeeeeeeeeee</a></li>
+                <li class = "items_li"><a href="">5rrrrrrrrrrrrrrrr</a></li>
+                <li class = "items_li"><a href=""></a></li>
+                <li class = "items_li"><a href="contacts.html"> contacts </a></li> 
+            </ul>
+        </nav>
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <input >
+        <button class = "button_1"> _'\(0_0)/'_ </button>
+    </header>
+    <main>
+        <article class = "roof">
+            <div>
+
+            </div>
+        </article>
+        <article class = "widget_panel">
+            <aricle class = "left_panel">
+                <div class = "el_top_1">
+
+                </div>
+                <div class = "el_down_1">
+
+                </div>
+            </aricle>
+            <aricle class = "center_panel">
+                <div class = "el_top_2">
+
+                </div>
+                <div class = "el_down_2">
+
+                </div>
+            </aricle>
+            <aricle class = "right_panel">
+                <div class = "el_top_3">
+
+                </div>
+                <div class = "el_down_3">
+
+                </div>
+            </aricle>
+        </article>
+        
+        <button id="topBtn" title="Наверх">↑ Наверх</button>
+    </main>
+    <footer>
+        <p class="content">Привет</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
